@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'img/favicon.svg',
 
   url: 'https://docs.obsidianpay.bz',
-  baseUrl: '/',
+  baseUrl: '/core-docs/',
   organizationName: 'ObsidianPay',
   projectName: 'core-docs',
   deploymentBranch: 'gh-pages',
