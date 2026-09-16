@@ -1,0 +1,6 @@
+build/
+.docusaurus/
+node_modules/
+.cache-loader/
+*.log
+

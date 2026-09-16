@@ -1,0 +1,52 @@
+/**
+ * Obsidian Pay documentation theme.
+ *
+ * Stock Docusaurus classic theme with the product palette applied. Keep additions
+ * minimal: the classic theme is the design, and it is what readers expect from a
+ * docs site.
+ */
+
+:root {
+  /* Brand primary, from the design system token --general-primary. */
+  --ifm-color-primary: #7e1dfb;
+  --ifm-color-primary-dark: #7009f5;
+  --ifm-color-primary-darker: #6a09e7;
+  --ifm-color-primary-darkest: #5707be;
+  --ifm-color-primary-light: #8c38fb;
+  --ifm-color-primary-lighter: #9346fc;
+  --ifm-color-primary-lightest: #ab6ffc;
+
+  --ifm-font-family-base: 'Cairo', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --ifm-code-font-size: 93%;
+  --docusaurus-highlighted-code-line-bg: rgba(126, 29, 251, 0.1);
+}
+
+[data-theme='dark'] {
+  /* Dark mode primary, from the same token set. */
+  --ifm-color-primary: #9d55fc;
+  --ifm-color-primary-dark: #8c36fb;
+  --ifm-color-primary-darker: #8326fb;
+  --ifm-color-primary-darkest: #6906e5;
+  --ifm-color-primary-light: #ae74fd;
+  --ifm-color-primary-lighter: #b784fd;
+  --ifm-color-primary-lightest: #d2b3fe;
+
+  --docusaurus-highlighted-code-line-bg: rgba(157, 85, 252, 0.18);
+}
+
+/* Endpoint headings are written as `POST /api/v1/...`, so keep them readable
+   at heading size instead of inheriting the red inline-code treatment. */
+.markdown h2 code,
+.markdown h3 code {
+  background: var(--ifm-code-background);
+  color: inherit;
+  font-size: 0.92em;
+  font-weight: 600;
+}
+
+/* Reference tables are wide; let them scroll instead of overflowing the page. */
+.markdown table {
+  display: block;
+  overflow-x: auto;
+}
