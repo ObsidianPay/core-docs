@@ -9,8 +9,9 @@ const config: Config = {
 
   url: 'https://docs.obsidianpay.bz',
   baseUrl: '/',
-  organizationName: 'ObsidianCore',
-  projectName: 'core',
+  organizationName: 'ObsidianPay',
+  projectName: 'core-docs',
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   markdown: {
