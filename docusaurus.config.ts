@@ -12,6 +12,7 @@ const config: Config = {
   organizationName: 'ObsidianPay',
   projectName: 'core-docs',
   deploymentBranch: 'gh-pages',
+  trailingSlash: true,
 
   onBrokenLinks: 'throw',
   markdown: {
